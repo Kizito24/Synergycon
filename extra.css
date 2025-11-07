@@ -9,7 +9,7 @@
   /* Ensure containers don't exceed viewport */
   .container {
     max-width: 100%;
-    padding-left: 10px;
+    padding-left: 25px;
     padding-right: 15px;
   }
   footer {
