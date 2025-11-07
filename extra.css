@@ -1,11 +1,23 @@
 @media (max-width: 768px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
-}
+  }
+  /* Ensure containers don't exceed viewport */
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
+  /* Fix for rows that might overflow */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .countdown-inner {
     flex-wrap: wrap;
   }
