@@ -12,7 +12,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
   /* Fix for rows that might overflow */
   .row {
     margin-left: 0;
