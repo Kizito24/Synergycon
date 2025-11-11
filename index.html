@@ -74,7 +74,10 @@ body {
   <link href="css/styles.css" rel="stylesheet"/>
   <link href="extra.css" rel="stylesheet"/>
   <link href="icons/font-awesome.min.css" rel="stylesheet"/>
-  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
  </head>
  <body>
   <header class="main_header_area position-absolute w-100">
@@ -1965,7 +1968,12 @@ body {
       Easily find your way to SynergyCon with our detailed directions. We've got you covered.
      </p> -->
     </div>
-    <div class="direction-content">
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">    <div class="direction-content">
      <div class="direction-info">
       <div class="row">
        <div class="col-lg-5 col-md-5 px-1">
@@ -2000,7 +2008,88 @@ body {
       </div>
      </div>
      <br>
-      </div>
+      </div></div>
+    <div class="swiper-slide">    <div class="direction-content">
+     <div class="direction-info">
+      <div class="row">
+       <div class="col-lg-5 col-md-5 px-1">
+        <div class="p-6 d-flex text-white w-100 h-100 rounded bg-pink">
+         <div class="justify-content-center align-self-center ms-6">
+          <h5 class="text-white pb-2">
+           EVENT 2 VENUE:
+          </h5>
+          <p class="pb-5 m-0">
+            Fashion, Film & Photography District
+          </p>
+          <h5 class="text-white pb-2">
+           ADDRESS:
+          </h5>
+          <p class="pb-5 m-0">
+            The Royal Box/Cube65, 65 Adeola Odeku St, Victoria Island, Lagos.
+          </p>
+          <h5 class="text-white pb-2">
+           RECEPTION INFO:
+          </h5>
+          <p class="pb-5 m-0">
+           Booking: 
+          </p>
+          <a>
+           Get Directions
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="col-lg-7 col-md-7 px-1 py-2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7251802973838!2d3.4197670757453396!3d6.429340924248808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf543e05436a3%3A0x4a59797468eb9854!2sRoyal%20Box%20Event%20Center!5e0!3m2!1sen!2sng!4v1762868405316!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+     </div>
+     <br>
+      </div></div>
+    <div class="swiper-slide">    <div class="direction-content">
+     <div class="direction-info">
+      <div class="row">
+       <div class="col-lg-5 col-md-5 px-1">
+        <div class="p-6 d-flex text-white w-100 h-100 rounded bg-pink">
+         <div class="justify-content-center align-self-center ms-6">
+          <h5 class="text-white pb-2">
+           EVENT 3 VENUE:
+          </h5>
+          <p class="pb-5 m-0">
+            Music, Tech & Gaming District
+          </p>
+          <h5 class="text-white pb-2">
+           ADDRESS:
+          </h5>
+          <p class="pb-5 m-0">
+            Police College Ground, 8a Oba Akinjobi Way, Ikeja GRA, Ikeja, Lagos.
+          </p>
+          <h5 class="text-white pb-2">
+           RECEPTION INFO:
+          </h5>
+          <p class="pb-5 m-0">
+           Booking: 
+          </p>
+          <a>
+           Get Directions
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="col-lg-7 col-md-7 px-1 py-2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4732798132372!2d3.343630675745849!3d6.587942022409582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92216091cc4d%3A0x49479a1699692727!2sPolice%20College!5e0!3m2!1sen!2sng!4v1762868450201!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     </div>
+     <br>
+      </div></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
      </div>
     </div>
    </div>
@@ -2149,6 +2238,30 @@ body {
   <script src="js/main.js">
   </script>
   <script src="extra.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
   </script>
   <script>
    (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c00621cbe7dd0b6',t:'MTcyNTgxMzY1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();

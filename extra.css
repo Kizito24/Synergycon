@@ -161,3 +161,9 @@ section.quotes-section {
 .dot.active {
   background-color: #1e293b;
 }
+
+.swiper {
+  width: 80%;
+  height: 475px;
+  margin-bottom: 50px;
+}
