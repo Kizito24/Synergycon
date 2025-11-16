@@ -74,10 +74,6 @@ body {
   <link href="css/styles.css" rel="stylesheet"/>
   <link href="extra.css" rel="stylesheet"/>
   <link href="icons/font-awesome.min.css" rel="stylesheet"/>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
  </head>
  <body>
   <header class="main_header_area position-absolute w-100">
@@ -1969,11 +1965,12 @@ body {
      </p> -->
     </div>
     <!-- Slider main container -->
-<div class="swiper">
+<div class="swiper-container">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+   <div class="swiper-wrapper">
+  <div class="swiper">
     <!-- Slides -->
-    <div class="swiper-slide">    <div class="direction-content">
+    <div id="swiper-slide-1">    <div class="direction-content">
      <div class="direction-info">
       <div class="row">
        <div class="col-lg-5 col-md-5 px-1">
@@ -2009,7 +2006,7 @@ body {
      </div>
      <br>
       </div></div>
-    <div class="swiper-slide">    <div class="direction-content">
+    <div id="swiper-slide-2">    <div class="direction-content">
      <div class="direction-info">
       <div class="row">
        <div class="col-lg-5 col-md-5 px-1">
@@ -2045,7 +2042,7 @@ body {
      </div>
      <br>
       </div></div>
-    <div class="swiper-slide">    <div class="direction-content">
+    <div id="swiper-slide-3">    <div class="direction-content">
      <div class="direction-info">
       <div class="row">
        <div class="col-lg-5 col-md-5 px-1">
@@ -2083,13 +2080,15 @@ body {
       </div></div>
     ...
   </div>
+  </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
-   <div class="swiper-button">
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+   <div class="swiper-nav">
+    <a href="#swiper-slide-1"></a>
+    <a href="#swiper-slide-2"></a>
+    <a href="#swiper-slide-3"></a>
   </div>
   <!-- If we need scrollbar
   <div class="swiper-scrollbar"></div> -->
@@ -2244,29 +2243,6 @@ body {
   <script src="extra.js">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-  </script>
   <script>
    (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c00621cbe7dd0b6',t:'MTcyNTgxMzY1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
   </script>
